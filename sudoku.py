@@ -21,7 +21,7 @@ class Board:
         return '\n'.join([' '.join([str(square.value) for square in row]) for row in self.grid])
 
     def solve(self):
-        ...
+        return
 
 #OBJECT CREATION
 bo = Board()
