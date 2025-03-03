@@ -15,7 +15,7 @@ class Board:
             return self.value
 
     def __init__(self):
-        self.grid = [[self.Square(row, col, random.randint(0,9), False) for col in range(9)] for row in range(9)]
+        self.grid = np.array([[self.Square(row, col, random.randint(0,9), False) for col in range(9)] for row in range(9)])
 
     def __str__(self):
         return '\n'.join([' '.join([str(square.value) for square in row]) for row in self.grid])
